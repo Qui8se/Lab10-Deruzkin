@@ -120,16 +120,61 @@
 
 
 
-Console.Write("Введите свою фамилию: ");
-string surname = Console.ReadLine()!.Trim();
-if (string.IsNullOrEmpty(surname)) {
-Console.WriteLine("Фамилия не введена. Завершение работы.");
-return;
-}
-Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
-var assigned = Enumerable.Range(1, 10)
-.OrderBy(_ => rnd.Next())
-.Take(2)
-.OrderBy(x => x)
-.ToList();
-Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine()!.Trim();
+// if (string.IsNullOrEmpty(surname)) {
+// Console.WriteLine("Фамилия не введена. Завершение работы.");
+// return;
+// }
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// var assigned = Enumerable.Range(1, 10)
+// .OrderBy(_ => rnd.Next())
+// .Take(2)
+// .OrderBy(x => x)
+// .ToList();
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+
+
+
+
+
+
+
+// Задача 3
+
+// string word = "программирование";
+
+// int count = 0;
+
+// foreach (char letter in word) {
+//     if (letter != 'а' && letter != 'е' && letter != 'ё' && 
+//         letter != 'и' && letter != 'о' && letter != 'у' && 
+//         letter != 'ы' && letter != 'э' && letter != 'ю' && 
+//         letter != 'я' && letter != 'ъ' && letter != 'ь') {
+        
+//         count++;
+//     }
+// }
+
+// Console.WriteLine($"Количество согласных букв: {count}");
+
+
+
+
+
+
+
+
+// Задача 10
+
+// string[] days = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
+// int n = 0;
+// foreach (string day in days)
+// {
+//     if (day == "Суббота" || day == "Воскресенье")
+//     {
+//         n++;
+//     }
+
+// }
+// Console.WriteLine(n);
